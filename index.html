@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Survey</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+          <h1 id="title">Thriving Hodgepodge Survey Form</h1>
+          <p id="description">Thank you for taking the time to help us make the website even more absurd</p>
+          <form class="survey" id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Your (can be fictional) Name</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" id="email-label">Your Email</label>
+              <input class="form-control" id="email" type="email" name="email" placeholder="Gotta Enter Email Here" required>
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number">Your (Mental) Age</label>
+              <input class="form-control" type="number" name="number" id="number" min="0" max="115" placeholder="Enter. Age. Here" required>
+            </div>
+            <div class="form-group">
+              <p>How would you describe yourself</p>
+              <select id="dropdown" class="form-control" name="descr" required>
+                <option disabled selected value>Select a fitting description</option>
+                <option value="busybody">Busybody</option>
+                <option value="noone">Noone in particular</option>
+                <option value="crazy-lazy">Crazy-lazy</option>
+                <option value="dunno">Dunno</option>
+                <option value="noidea">No idea how I got here</option>
+                <option value="lescargot">The Lescargot kind</option>
+                <option value="hedgehog">A hodgepodge hedgehog</option>
+              </select>
+              </div>
+              <div class="form-group">
+                <p>Have you shared stuff from this website with anyone?</p>
+                <label>
+                  <input type="radio" name="user-recommend" class="input-radio" value="Yes" checked>Yes
+                </label>
+                <label>
+                  <input type="radio" name="user-recommend" class="input-radio" value="No">Nope
+                </label>
+                <label>
+                  <input type="radio" name="user-recommend" class="input-radio" value="Don't remember">Dunno
+                </label>
+              </div>
+              <div class="form-group">
+                <p>What content would you like to see improved?</p>
+                <label>
+                  <input class="input-checkbox" type="checkbox" name="improve" value="More travel info">More travel info
+                </label>
+                <label>
+                  <input class="input-checkbox" type="checkbox" name="improve" value="Abstract art">Abstract art
+                </label>
+                <label>
+                  <input class="input-checkbox" type="checkbox" name="improve" value="Books reviews">Book reviews
+                </label>
+                <label>
+                  <input class="input-checkbox" type="checkbox" name="improve" value="Data viz projects">Data viz projects
+                </label>
+                <label>
+                  <input class="input-checkbox" type="checkbox" name="improve" value="More animations">More animations
+                </label>
+                <label>
+                  <input class="input-checkbox" type="checkbox" name="improve" value="Random stuff!!!">More random stuff!!!
+                </label>
+              </div>
+              <div class="form-group">
+                <p>Any suggestions?</p>
+                <textarea id="comments" name="comment" class="input-texarea" placeholder="Enter your comment here..."></textarea>
+              </div>
+              <div class="form-group">
+                <button id="submit" type="submit" class="submit-button">Submit</button>
+              </div>
+          </form>
+        </div>
+      </body>
+</html>
